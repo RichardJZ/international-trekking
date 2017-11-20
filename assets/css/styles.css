@@ -63,10 +63,11 @@ hr {
 
 section h3.title {
 	text-transform: capitalize;
-	font: 32px "Open Sans", sans-serif;
+	font: 32px "Roboto", sans-serif;
 	margin-bottom: 30px;
 	text-align: center;
-	color:#3f51b5;
+	color:#3f51b5; 	
+	font-weight:100;
 }
 
 section p {
@@ -288,6 +289,7 @@ header nav li {
 .packages .grid li h4 {
 	font-size: 30px;
 	margin: 25px 0;
+	color:#3f51b5;
 }
 
 @media (max-width: 800px) {
