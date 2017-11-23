@@ -8,11 +8,14 @@
     
     
     .container{
+        width:75%;
       background-color:#ccc;
       padding:10px;
       display:flex;
       flex-direction:row;
       flex-wrap:wrap;
+      
+     
      
      
      
@@ -40,6 +43,7 @@
 
 .item2{
     flex-basis:38%;
+    
 
 }
 
@@ -49,7 +53,7 @@ width:100%;
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
 
     .item1{
         flex-basis:100%;
