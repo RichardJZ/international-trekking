@@ -1,0 +1,77 @@
+
+*{
+    margin:0;
+      padding:0;
+      box-sizing:border-box;
+    
+    }
+    
+    
+    .container{
+      background-color:#ccc;
+      padding:10px;
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+     
+     
+     
+      
+      
+      
+      
+    }
+    
+    .item{
+      background-color:red;
+      padding:15px;
+     /* margin:10px; */
+      color:#fff;
+      font-size:2rem;
+    
+    }
+
+.item1{
+    
+    flex-basis:62%;
+   
+
+}
+
+.item2{
+    flex-basis:38%;
+
+}
+
+img{
+width:100%;
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .item1{
+        flex-basis:100%;
+
+    }
+
+    .item2{
+        flex-basis:100%;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    i1{
+
+    }
