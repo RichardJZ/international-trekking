@@ -1,3 +1,29 @@
+:root {
+    --color-primary: #eb2f64;
+    --color-primary-light: #FF3366;
+    --color-primary-dark: #BA265D;
+
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+    
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+
+    --color-brown-light-1: rgb(213, 149, 65);
+
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+    --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+    --line: 1px solid var(--color-grey-light-2);
+}
+
+
+
+
+
 /*General Styles*/
 @keyframes fadein {
   100% {
@@ -11,6 +37,11 @@
 html {
   font: normal 16px sans-serif;
   color: #333; }
+
+body{
+	background-color:#ffffff;
+
+}
 
 ul,
 nav {
@@ -62,8 +93,19 @@ section h3.title {
   font: 32px "Roboto", sans-serif;
   margin-bottom: 30px;
   text-align: center;
-  color: #3f51b5;
+  color: blue;
   font-weight: 100; }
+
+section h3.title strong.dest{
+	color:blue;
+	font-weight: 700;	
+
+}
+
+section p{
+color:val(--color-brown-light-1);
+font-size:1.25rem;
+}
 
 section p {
   max-width: 775px;
@@ -161,16 +203,26 @@ header nav li {
   background-position: center; }
 
 .destinations .grid .wrapper-img-overlay-text{
-  flex-basis: 37%;
+  flex-basis: 36%;
   position:relative;
    }
 
 .destinations .grid .wrapper-img-overlay-text-lg {
-  flex-basis: 61%;
-  position:relative; }
+  flex-basis: 60%;
+  position:relative;
+ }
 
 .destinations .grid li.Xlarge {
-  flex-basis: 100%; }
+  flex-basis: 100%;
+   }
+
+.destinations .grid li.large,
+.destinations .grid li.small {
+  border-radius:3px;
+   }
+ {
+  border-radius:3px;
+   }
 
 
 .wrapper-img-cap-sm{
@@ -215,6 +267,7 @@ header nav li {
 	position:absolute;
 	bottom:0%;
 	left:0;
+	font-size:110%;
 	
 	color: #fff;
 	background-color:rgba(128,128,128,.8);
@@ -237,6 +290,7 @@ header nav li {
 	position:absolute;
 	bottom:0%;
 	left:0;
+	font-size:110%;
 	
 	color: #fff;
 	background-color:rgba(128,128,128,.8);
