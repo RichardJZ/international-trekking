@@ -225,8 +225,8 @@ header nav li {
    }
 
 
-.wrapper-img-cap-sm{
-	
+.pics-grid{
+  margin-top:40px;
 
 
 }
@@ -305,6 +305,36 @@ header nav li {
 
 }
 
+figcaption{
+
+position:absolute;
+  bottom:0%;
+  left:0;
+  font-size:110%;
+  
+  color: #fff;
+  background-color:rgba(128,128,128,.8);
+  display:block;
+  width:100%;
+
+  padding:20px;
+  
+  opacity:.5;
+  transition:all .7s
+
+}
+
+figure{
+
+position:relative;
+
+}
+
+.figure-popup{
+
+
+
+}
 .destinations .grid .wrapper-img-overlay-text-lg:hover .img-text-lg{
 	opacity:1;
 }
@@ -397,14 +427,14 @@ footer p {
 .wrapper-map {
   display: flex; }
 
-.wrapper-map-overlay {
+#wrapper-sous-massa {
   position: absolute;
   top: 10%;
   left: 45%;
   color: #fcfcfc;
   font-size: 200%; }
 
- #wrapper-false-sittee{
+ #wrapper-lkest{
 
  	position: absolute;
   top: 70%;
@@ -414,7 +444,48 @@ footer p {
 
   }
 
-   #wrapper-bk-sunset{
+ #wrapper-moon-landscape{
+
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  color: #000;
+  font-size: 200%;
+
+  }
+
+  #wrapper-azgor{
+
+  position: absolute;
+  top: 22%;
+  left: 47%;
+  color: #000;
+  font-size: 200%;
+
+  }
+
+#wrapper-dra-valley{
+  position: absolute;
+  top: 25%;
+  left: 18%;
+  color: #000;
+  font-size: 200%;
+
+
+}
+   
+
+#wrapper-jbel-sahro{
+   position: absolute;
+  top: 35%;
+  left: 25%;
+  color: #000;
+  font-size: 200%;
+
+
+}
+
+  #wrapper-bk-sunset{
 
  	position: absolute;
   top: 49%;
@@ -567,8 +638,8 @@ visibility:visible;
 }
 
 .popup__image{
-  width:100%;
-  background-size:cover;
+  max-width:100%;
+  
   background-position:center;
   
   
@@ -579,8 +650,8 @@ visibility:visible;
 }
 
 .popup__wrapper-image{
-    width:100%;
-    height:100%;
+    max-width:70%;
+    height:auto;
     overflow:hidden;
     background-color:transparent;
     position:relative;
