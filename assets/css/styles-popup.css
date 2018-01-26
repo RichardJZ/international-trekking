@@ -44,17 +44,28 @@ body{
 
 }
 
-ul,
+
+
+/*
 nav {
   list-style: none; }
 
-a {
+nav li a {
   text-decoration: none;
   opacity: 0.75;
   color: #fee; }
 
-a:hover {
+nav li a:hover {
   opacity: 1; }
+
+*/
+  
+h2 a{
+  text-decoration:none;
+  color:#fff;
+
+
+}
 
 a.btn {
   border-radius: 4px;
@@ -73,8 +84,13 @@ section {
   align-items: center;
   padding: 100px 80px; }
 
-section:not(.hero):nth-child(even) {
-  background-color: #f5f5f5; }
+/* section:not(.hero):nth-child(even) {
+    background-color: #f5f5f5; }
+*/
+section.packages{
+   background-color: #f5f5f5;
+
+}
 
 .grid {
   width: 100%;
@@ -87,7 +103,7 @@ hr {
   height: 3px;
   background-color: #3f51b5;
   border: 0;
-  margin: 50px; }
+  margin: 50px auto; }
 
 section h3.title {
   text-transform: capitalize;
@@ -104,7 +120,7 @@ section h3.title strong.dest{
 }
 
 section p{
-color:val(--color-brown-light-1);
+color:var(--color-brown-light-1);
 font-size:1.25rem;
 }
 
@@ -121,19 +137,22 @@ section p {
 
 /*Header Styles*/
 header {
-  position: absolute;
+  
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+ 
   align-items: center;
   padding: 35px 100px 0;
   animation: 1s fadein 0.5s forwards;
   opacity: 0;
-  color: #fff; }
+  color: #fff; 
+  z-index:2;
+  
+
+}
 
 header h2 {
   font-family: "Quicksand", sans-serif; }
-
+/*
 header nav {
   display: flex;
   margin-right: -15px; }
@@ -141,9 +160,11 @@ header nav {
 header nav li {
   margin: 0 15px; }
 
+  */
+
 @media (max-width: 800px) {
   header {
-    padding: 20px 50px;
+    padding: 0;
     flex-direction: column; }
   header h2 {
     margin-bottom: 15px; } }
@@ -165,7 +186,9 @@ header nav li {
   background-size: cover;
   z-index: -1;
   background-color: #80a3db;
-  background-position: center; }
+  background-position: center;
+
+   }
 
 .hero h1 {
   font: bold 60px "Open Sans", sans-serif;
@@ -224,7 +247,7 @@ header nav li {
 
 }
 
-.meal-photo {
+.travelpicture {
     width: 100%;
     margin: 0;
     overflow: hidden;
@@ -232,7 +255,7 @@ header nav li {
 
 }
 
-.meal-photo img {
+.travelpicture img {
     opacity: 0.7;
     width: 100%;
     height: auto;
@@ -243,7 +266,7 @@ header nav li {
     transition: transform 0.5s, opacity 0.5s;
 }
 
-.meal-photo img:hover {
+.travelpicture img:hover {
     opacity: 1;
     -webkit-transform: scale(1.03);
     -ms-transform: scale(1.03);
@@ -271,7 +294,8 @@ header nav li {
   
   background-clip: content-box;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  list-style: none; }
 
 .destinations .grid .wrapper-img-overlay-text{
   flex-basis: 36%;
@@ -310,13 +334,80 @@ header nav li {
   top: 5%;
   left: 20%; }
 
-@media (max-width: 440px)  {
-
-
+@media (max-width: 600px)  {
+/*
   .travelpictures-showcase li {
     display: block;
     float: left;
+    width: 80%;
+
+}
+
+.travelpicture img{
+  margin:0 auto;
+
+
+}
+
+.travelpicture{
+background-color:transparent;
+
+}
+*/
+
+
+
+section p{
+  margin:20px 15px;
+  font-size:1rem;
+
+
+}
+
+.testimonials .quote{
+margin:20px 0;
+
+}
+
+.travelpicture img {
+
+    opacity: 0.7;
     width: 100%;
+    height: auto;
+    /*-webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s; */
+    transition:  opacity 0.5s;
+}
+
+.travelpicture img:hover {
+    opacity: 1;
+   /* -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08); */
+}
+
+.travelpictures-showcase li {
+    display: block;
+    float: left;
+    width: 33%;
+
+
+
+}
+
+
+.popup__content{
+    width:100%;
+    
+    
+}
+
+div.popup__wrapper-image{
+    max-width:100%;
+    margin-top:150px;
+   
 }
 }
 
@@ -361,7 +452,6 @@ position:absolute;
   bottom:0%;
   left:0;
   font-size:110%;
-  
   color:var(--color-grey-light-1);
   background-color:var(--color-grey-dark-0);
   display:block;
@@ -370,7 +460,7 @@ position:absolute;
   padding:20px;
   
   opacity:.5;
-  transition:all .7s
+  transition:all .7s;
   display:flex;
   
 
@@ -386,11 +476,6 @@ position:relative;
 
 }
 
-.figure-popup{
-
-
-
-}
 .destinations .grid .wrapper-img-overlay-text-lg:hover .img-text-lg{
 	opacity:1;
 }
@@ -418,7 +503,8 @@ position:relative;
   font-size: 22px;
   font-weight: 300;
   line-height: 1.5;
-  margin: 40px 0 25px; }
+  margin: 40px 0 25px;
+  color:var(--color-brown-light-1); }
 
 @media (max-width: 800px) {
   .testimonials .quote {
@@ -613,6 +699,9 @@ visibility:visible;
 
 }
 
+
+
+
 .popup__image{
   max-width:100%;
   
@@ -620,7 +709,7 @@ visibility:visible;
   
   
   
-    border-radius:3px;
+  border-radius:3px;
 
 
 }
@@ -646,8 +735,135 @@ visibility:visible;
 
 }
 
-#popup-false-sittee{
 
+nav {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  
+}
 
+/*Create a horizontal list with spacing*/
+nav li {
+  display:inline-block;
+  
+}
+
+#menu li a {
+  display:block;
+  min-width:140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  opacity:0.9;
+
+  text-decoration: none;
+  border:1px solid white;
+  border-radius:3px;
+  transition: opacity 2s;
 
 }
+
+#menu li:hover a{
+  background:rgba(63, 81, 181, 0.8);
+
+}
+
+header{
+display:flex;
+justify-content:space-between;
+
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background: #19c589;
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+    -webkit-appearance: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+
+
+
+
+@media screen and (min-width : 801px){
+  header{
+position:absolute;
+  }
+}
+
+@media screen and (max-width : 800px){
+
+  /*Create vertical spacing*/
+  li {
+    margin-bottom: 1px;
+  }
+  /*Make all menu links full width*/
+  #menu li, #menu li a {
+    width: 100vw;
+
+  }
+
+#menu li a {
+background:rgba(63, 81, 18, .8);
+margin-bottom:0;
+}
+
+
+  #menu{
+    
+      display:none;
+    
+   
+    
+    
+
+
+  }
+
+input[type=checkbox]:checked ~ #menu{
+    
+    display:block;
+    opacity:1;
+
+}
+
+input[type=checkbox]:checked ~ #menu li a{
+    
+    
+    opacity:1;
+
+}
+
+  /*Display 'show menu' link*/
+  .show-menu {
+    display:block;
+    width:100vw;
+    
+  }
+
+  .wrapper-title{
+display:none;
+
+  }
+}
+
+@media screen and (max-width : 500px){
+  .hero-content-area h1{
+font-size:34px;
+
+  }
+  }
