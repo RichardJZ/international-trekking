@@ -168,7 +168,7 @@ header nav li {
   margin: 0 15px; }
   */
 
-@media (max-width: 800px) {
+@media (max-width: 1180px) {
   header {
     padding: 0;
     flex-direction: column; }
@@ -739,7 +739,7 @@ nav {
 /*Create a horizontal list with spacing*/
 nav li {
   display:inline-block;
-  margin:-5px 0;
+  margin:0;
   
 }
 
@@ -794,7 +794,7 @@ list-style:none;
 
 /* mobile menu */
 
-.js--menu{
+#js--menu{
   display:none;
 
 }
@@ -811,13 +811,39 @@ display:none;
 
 
 
-@media screen and (min-width : 801px){
+@media screen and (min-width : 763px){
   header{
 position:absolute;
   }
+
+
+
 }
 
-@media screen and (max-width : 800px){
+/*
+@media screen and (max-width : 1190px){
+#menu li a {
+  display:block;
+  min-width:100px;
+  height: 50px;
+  padding:0 10px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  opacity:0.9;
+
+  text-decoration: none;
+  border:1px solid white;
+  border-radius:3px;
+  transition: opacity 2s;
+
+}
+
+
+
+} */
+@media screen and (max-width : 762px){
 
   /*Create vertical spacing*/
   li {
@@ -832,12 +858,18 @@ position:absolute;
   text-align:center;
   background-color:var(--color-primary-blue-1);
   font-size:1.25rem;
-  height:1.8rem;
+  height:2.8rem;
+  padding:10px;
 }
 
 .mobile-menu li, .mobile-menu li a{
 width:100vw;
 background-color:var(--color-primary-blue-2);
+}
+
+.mobile-menu li:hover, .mobile-menu li a:hover{
+width:100vw;
+background-color:var(--color-primary-blue-1);
 }
 
 .mobile-menu li{
@@ -879,26 +911,10 @@ margin-bottom:0;
 
   }
 
-input[type=checkbox]:checked ~ #menu{
-    
-    display:block;
-    opacity:1;
 
-}
 
-input[type=checkbox]:checked ~ #menu li a{
-    
-    
-    opacity:1;
 
-}
-
-  /*Display 'show menu' link*/
-  .show-menu {
-    display:block;
-    width:100vw;
-    
-  }
+  
 
   .wrapper-title{
 display:none;
